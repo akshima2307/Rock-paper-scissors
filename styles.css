@@ -1,0 +1,245 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+@media(max-width: 1100px){
+  html{
+    font-size: 55%;
+  }
+}
+@media(max-width: 375px){
+  html{
+    font-size: 40%;
+  }
+}
+body{
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+.view{
+  position: relative;
+  height: 100vh;
+  background: radial-gradient(hsl(214, 47%, 23%) , hsl(237, 49%, 15%));
+}
+.header{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid hsl(217, 16%, 45%);
+  border-radius: 10px;
+}
+@media (max-width: 375px){
+  .header{
+    width: 325px;
+  }
+}
+.heading-primary{
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.score{
+  color: hsl(229, 64%, 46%);
+  background: white;
+  font-size: 1rem;
+  padding: 2rem 4rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.total-score{
+  font-size: 5rem;
+  font-weight: 700;
+  color:hsl(229, 25%, 31%);
+}
+.game{
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 35rem;
+  background-position: center;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 250px;
+}
+
+.btn-circle,
+.btn-circle:focus,
+.btn-circle:visited{
+  border: none;
+  height: 16rem;
+  width: 16rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn-circle > .wrapper{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 12rem;
+  width: 12rem;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow:inset 0 0 10px #000000;;
+}
+.paper{
+  background-image: radial-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+
+}
+
+.rock{
+  background-image: radial-gradient(hsl(349, 71%, 52%) , hsl(349, 70%, 56%));
+
+}
+.scissors{
+  background-image: radial-gradient(hsl(39, 89%, 49%) , hsl(40, 84%, 53%));
+
+}
+.p{
+  position: absolute;
+  top: -6%;
+  left: 34%;
+}
+.r{
+  position: absolute;
+  top: -6%;
+  left: 56%;
+}
+.s{
+  position: absolute;
+  top: 60%;
+  left: 45%;
+}
+@media (max-width: 375px){
+  .p{
+    top: 2%;
+    left: 12%;
+  }
+  .r{
+    top: 2%;
+    left: 60%;
+  }
+  .s{
+    top: 60%;
+    left: 37%;
+  }
+}
+.rules{
+  padding: 1.5rem 3rem;
+  background-image: radial-gradient(hsl(214, 47%, 23%) , hsl(237, 49%, 15%));
+  border: 2px solid hsl(217, 16%, 45%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+.rules:hover{
+  cursor: pointer;
+}
+
+.popup{
+  position: absolute;
+  top: 24%;
+  left: 50%;
+  transform: translate(-50%);
+  height: 43rem;
+  width: 40rem;
+  background-color: white;
+  border-radius: 3%;
+  display: none;
+}
+.popup:target {
+  display: block;
+  visibility: visible;
+}
+
+.popup > .heading > h1{
+
+  color:hsl(229, 25%, 31%);
+  margin: 3rem 0 2rem 5rem;
+  font-size: 2.5rem;
+}
+.heading  {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.heading > a {
+  margin-right: 4rem;
+}
+.popup > img {
+  display: block;
+  margin: 2rem auto;
+}
+.game-view{
+  display: block;
+  justify-content: center;
+}
+.res{
+  position: absolute;
+  top: 45%;
+  left: 41.5%;
+  font-size: 4rem;
+  color: white;
+}
+.playmore{
+  position: absolute;
+  top: 60%;
+  left: 42%;
+  text-decoration: none;
+  color: hsl(229, 25%, 31%);
+  font-size: 2rem;
+  background-color: white;
+  padding: 1.4rem 5rem;
+  border-radius: 10px;
+}
+.user{
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translateX(-30%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.computer{
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  transform: translateX(-70%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.margin{
+  margin-top: 8rem;
+}
+.circle-bg{
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  background-color: hsl(237, 49%, 15%);
+  border: none;
+
+}
+.user > h1,
+.computer > h1{
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 5rem;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section id ="view" class="view">
+    <div class="header">
+      <div class="heading-primary">
+        <h1>ROCK</h1>
+        <h1>PAPER</h1>
+        <h1>SCISSORS</h1>
+      </div>
+      <div class="score">
+        <h2>SCORE</h2>
+        <div class="total-score">
+          0
+        </div>
+      </div>
+    </div>
+
+   <div class="game">
+        <button id="paper" class="btn-circle p paper">
+          <span class="wrapper">
+            <img src="./images/icon-paper.svg" >
+          </span>
+        </button>
+        <button id="rock" class="btn-circle r rock">
+          <span class="wrapper">
+            <img src="./images/icon-rock.svg" >
+          </span>
+        </button>
+
+        <button id="scissors" class="btn-circle s  scissors">
+          <span class="wrapper">
+            <img src="./images/icon-scissors.svg" >
+          </span>
+        </button>
+
+    </div>
+    <div class="game-view">
+      <div class="user">
+
+      </div>
+      <div class="status">
+
+      </div>
+      <div class="computer">
+
+      </div>
+    </div>
+
+<!--    <div class="game-view">
+      <div class="user">
+        <h1>YOU PICKED</h1>
+        <button id="rock" class="btn-circle  rock">
+          <span class="wrapper">
+            <img src="./images/icon-rock.svg" >
+          </span>
+        </button>
+      </div>
+      <div class="computer">
+        <h1>THE HOUSE PICKED</h1>
+        <button id="rock" class="circle-bg">
+            &nbsp;
+        </button>
+      </div>
+    </div>
+-->
+
+    <a href="#popup" class="rules">RULES</a>
+    <div class="popup" id="popup">
+      <div class="heading">
+        <h1>RULES</h1>
+        <a href="#main"><img src="./images/icon-close.svg"></a>
+      </div>
+      <img src="./images/image-rules.svg" alt="Rules">
+    </div>
+
+
+  </section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="./app.js" charset="utf-8"></script>
+</body>
+</html>
