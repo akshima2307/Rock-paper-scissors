@@ -41,7 +41,7 @@ function gameView(userPick){
     let computerPick = getcompPick();
     var markup = `
         <h1>YOU PICKED</h1>
-        <button id=${userPick} class="btn-circle  ${userPick}">
+        <button id=${userPick} name="button" class="btn-circle  ${userPick}">
           <span class="wrapper">
             <img src="./images/icon-${userPick}.svg" >
           </span>
@@ -61,7 +61,7 @@ function gameView(userPick){
 function computergameView(computerPick){
     const markup = `
       <h1>HOUSE PICKED</h1>
-        <button class="btn-circle  ${computerPick}">
+        <button name="button" class="btn-circle  ${computerPick}">
           <span class="wrapper">
             <img src="./images/icon-${computerPick}.svg" >
           </span>
