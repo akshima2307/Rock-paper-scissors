@@ -8,16 +8,6 @@
 html{
   font-size: 62.5%;
 }
-@media(max-width: 1100px){
-  html{
-    font-size: 55%;
-  }
-}
-@media(max-width: 375px){
-  html{
-    font-size: 40%;
-  }
-}
 body{
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
@@ -37,11 +27,6 @@ body{
   justify-content: space-between;
   border: 2px solid hsl(217, 16%, 45%);
   border-radius: 10px;
-}
-@media (max-width: 375px){
-  .header{
-    width: 325px;
-  }
 }
 .heading-primary{
   color: white;
@@ -109,31 +94,20 @@ body{
 .p{
   position: absolute;
   top: -6%;
-  left: 34%;
+  left: 35%;
+  transform: translateX(-35%);
 }
 .r{
   position: absolute;
   top: -6%;
-  left: 56%;
+  right: 35%;
+  transform: translateX(35%);
 }
 .s{
   position: absolute;
   top: 60%;
-  left: 45%;
-}
-@media (max-width: 375px){
-  .p{
-    top: 2%;
-    left: 12%;
-  }
-  .r{
-    top: 2%;
-    left: 60%;
-  }
-  .s{
-    top: 60%;
-    left: 37%;
-  }
+  left: 50%;
+  transform: translateX(-50%);
 }
 .rules{
   padding: 1.5rem 3rem;
@@ -192,14 +166,17 @@ body{
 .res{
   position: absolute;
   top: 45%;
-  left: 41.5%;
+  left: 50%;
+  transform: translateX(-50%);
   font-size: 4rem;
   color: white;
 }
+
 .playmore{
   position: absolute;
   top: 60%;
-  left: 42%;
+  left: 50%;
+  transform: translateX(-50%);
   text-decoration: none;
   color: hsl(229, 25%, 31%);
   font-size: 2rem;
@@ -207,6 +184,7 @@ body{
   padding: 1.4rem 5rem;
   border-radius: 10px;
 }
+
 .user{
   position: absolute;
   top: 40%;
@@ -216,6 +194,8 @@ body{
   flex-direction: column;
   align-items: center;
 }
+
+
 .computer{
   position: absolute;
   top: 40%;
@@ -242,4 +222,78 @@ body{
   font-weight: 600;
   color: white;
   margin-bottom: 5rem;
+}
+
+
+@media(max-width: 1250px){
+  .user{
+    left: 20%;
+    transform: translateX(-20%);
+  }
+  .computer{
+    left: 80%;
+    transform: translateX(-80%);
+  }
+}
+
+
+@media(max-width: 900px) {
+  html{
+    font-size: 50%;
+  }
+  .user{
+    top: 35%;
+    left: 25%;
+    transform: translateX(-25%);
+  }
+  .computer{
+    top: 35%;
+    left: 75%;
+    transform: translateX(-75%);
+  }
+  .res{
+    top: 65%;
+  }
+  .playmore{
+    top: 75%;
+  }
+}
+
+@media(max-width: 650px) {
+  html{
+    font-size: 45%;
+  }
+  .header{
+    width: 80%;
+  }
+  .p{
+    left: 30%;
+    transform: translateX(-30%);
+  }
+  .r{
+    right: 30%;
+    transform: translateX(30%);
+  }
+  .s{
+    top: 50%;
+  }
+
+}
+
+
+@media (max-width: 460px) {
+  html{
+    font-size: 40%;
+  }
+  .p{
+    left: 25%;
+    transform: translateX(-25%);
+  }
+  .r{
+    left: 75%;
+    transform: translateX(-75%);
+  }
+  .s{
+    top: 35%;
+  }
 }

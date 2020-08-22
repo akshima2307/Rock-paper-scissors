@@ -60,7 +60,7 @@ function gameView(userPick){
 //Computer View
 function computergameView(computerPick){
     const markup = `
-      <h1>THE HOUSE PICKED</h1>
+      <h1>HOUSE PICKED</h1>
         <button class="btn-circle  ${computerPick}">
           <span class="wrapper">
             <img src="./images/icon-${computerPick}.svg" >
@@ -118,6 +118,10 @@ function Draw(){
   setTimeout(() => {
     renderStatus("TIE");
   },1000)
+}
+
+function Bg(){
+
 }
 
 //Status View
